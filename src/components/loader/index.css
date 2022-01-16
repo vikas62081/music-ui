@@ -1,0 +1,29 @@
+.loader {
+    opacity: 1;
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #07e0fd; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader-layout{
+      position: fixed;
+      min-height: 100vh;
+      width: 100%;
+    height: 50px;
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    background: black;
+    overflow: auto;
+  }

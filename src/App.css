@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -14,14 +14,17 @@
 }
 
 .App-header {
+  position: relative;
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 5px;
 }
 
 .App-link {
@@ -35,4 +38,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+input,select{
+  outline: 0;
+  border: "1px black solid";
+  padding: 0 10px;
+  height: 40px;
+  width: 400px;
+  margin: 5px;
+  border-radius: 25px;
+  font-size:small ;
+}
+.search-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center; 
+   width: 80%;
 }
